@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45AA3E7B277944FB0045804B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E7A277944FB0045804B /* AppDelegate.m */; };
+		45AA3E7E277944FB0045804B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E7D277944FB0045804B /* SceneDelegate.m */; };
+		45AA3E81277944FB0045804B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E80277944FB0045804B /* ViewController.m */; };
+		45AA3E84277944FB0045804B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3E82277944FB0045804B /* Main.storyboard */; };
+		45AA3E86277944FC0045804B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3E85277944FC0045804B /* Assets.xcassets */; };
+		45AA3E89277944FC0045804B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3E87277944FC0045804B /* LaunchScreen.storyboard */; };
+		45AA3E8C277944FC0045804B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E8B277944FC0045804B /* main.m */; };
+		45AA3E98277945890045804B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3E96277945890045804B /* Interface.storyboard */; };
+		45AA3E9A2779458A0045804B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3E992779458A0045804B /* Assets.xcassets */; };
+		45AA3EA02779458B0045804B /* SpO2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 45AA3E9F2779458B0045804B /* SpO2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45AA3EA62779458B0045804B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EA52779458B0045804B /* InterfaceController.m */; };
+		45AA3EA92779458B0045804B /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EA82779458B0045804B /* ExtensionDelegate.m */; };
+		45AA3EAC2779458B0045804B /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAB2779458B0045804B /* ComplicationController.m */; };
+		45AA3EAE2779458B0045804B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2779458B0045804B /* Assets.xcassets */; };
+		45AA3EB22779458B0045804B /* SpO2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 45AA3E94277945890045804B /* SpO2.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45AA3EBE277948920045804B /* AppleWatchConnectivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EBD277948920045804B /* AppleWatchConnectivityManager.m */; };
+		45AA3EBF277948920045804B /* AppleWatchConnectivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EBD277948920045804B /* AppleWatchConnectivityManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45AA3EA12779458B0045804B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45AA3E6E277944FB0045804B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AA3E9E2779458B0045804B;
+			remoteInfo = "SpO2 WatchKit Extension";
+		};
+		45AA3EB02779458B0045804B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45AA3E6E277944FB0045804B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AA3E93277945890045804B;
+			remoteInfo = SpO2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45AA3EB62779458B0045804B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				45AA3EA02779458B0045804B /* SpO2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AA3EBA2779458B0045804B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				45AA3EB22779458B0045804B /* SpO2.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45AA3E76277944FB0045804B /* oxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AA3E79277944FB0045804B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45AA3E7A277944FB0045804B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45AA3E7C277944FB0045804B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		45AA3E7D277944FB0045804B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		45AA3E7F277944FB0045804B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45AA3E80277944FB0045804B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45AA3E83277944FB0045804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45AA3E85277944FC0045804B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45AA3E88277944FC0045804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45AA3E8A277944FC0045804B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45AA3E8B277944FC0045804B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45AA3E94277945890045804B /* SpO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AA3E97277945890045804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		45AA3E992779458A0045804B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45AA3E9F2779458B0045804B /* SpO2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpO2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AA3EA42779458B0045804B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		45AA3EA52779458B0045804B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		45AA3EA72779458B0045804B /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		45AA3EA82779458B0045804B /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		45AA3EAA2779458B0045804B /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		45AA3EAB2779458B0045804B /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		45AA3EAD2779458B0045804B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45AA3EAF2779458B0045804B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45AA3EBC277948920045804B /* AppleWatchConnectivityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleWatchConnectivityManager.h; sourceTree = "<group>"; };
+		45AA3EBD277948920045804B /* AppleWatchConnectivityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleWatchConnectivityManager.m; sourceTree = "<group>"; };
+		45AA3EC1277951510045804B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45AA3E73277944FB0045804B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AA3E9C2779458B0045804B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45AA3E6D277944FB0045804B = {
+			isa = PBXGroup;
+			children = (
+				45AA3EBB2779487B0045804B /* Shared */,
+				45AA3E78277944FB0045804B /* oxygen */,
+				45AA3E95277945890045804B /* SpO2 */,
+				45AA3EA32779458B0045804B /* SpO2 WatchKit Extension */,
+				45AA3E77277944FB0045804B /* Products */,
+				45AA3EC0277951500045804B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45AA3E77277944FB0045804B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3E76277944FB0045804B /* oxygen.app */,
+				45AA3E94277945890045804B /* SpO2.app */,
+				45AA3E9F2779458B0045804B /* SpO2 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45AA3E78277944FB0045804B /* oxygen */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3E79277944FB0045804B /* AppDelegate.h */,
+				45AA3E7A277944FB0045804B /* AppDelegate.m */,
+				45AA3E7C277944FB0045804B /* SceneDelegate.h */,
+				45AA3E7D277944FB0045804B /* SceneDelegate.m */,
+				45AA3E7F277944FB0045804B /* ViewController.h */,
+				45AA3E80277944FB0045804B /* ViewController.m */,
+				45AA3E82277944FB0045804B /* Main.storyboard */,
+				45AA3E85277944FC0045804B /* Assets.xcassets */,
+				45AA3E87277944FC0045804B /* LaunchScreen.storyboard */,
+				45AA3E8A277944FC0045804B /* Info.plist */,
+				45AA3E8B277944FC0045804B /* main.m */,
+			);
+			path = oxygen;
+			sourceTree = "<group>";
+		};
+		45AA3E95277945890045804B /* SpO2 */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3E96277945890045804B /* Interface.storyboard */,
+				45AA3E992779458A0045804B /* Assets.xcassets */,
+			);
+			path = SpO2;
+			sourceTree = "<group>";
+		};
+		45AA3EA32779458B0045804B /* SpO2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3EA42779458B0045804B /* InterfaceController.h */,
+				45AA3EA52779458B0045804B /* InterfaceController.m */,
+				45AA3EA72779458B0045804B /* ExtensionDelegate.h */,
+				45AA3EA82779458B0045804B /* ExtensionDelegate.m */,
+				45AA3EAA2779458B0045804B /* ComplicationController.h */,
+				45AA3EAB2779458B0045804B /* ComplicationController.m */,
+				45AA3EAD2779458B0045804B /* Assets.xcassets */,
+				45AA3EAF2779458B0045804B /* Info.plist */,
+			);
+			path = "SpO2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		45AA3EBB2779487B0045804B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3EBC277948920045804B /* AppleWatchConnectivityManager.h */,
+				45AA3EBD277948920045804B /* AppleWatchConnectivityManager.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		45AA3EC0277951500045804B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45AA3EC1277951510045804B /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45AA3E75277944FB0045804B /* oxygen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AA3E8F277944FC0045804B /* Build configuration list for PBXNativeTarget "oxygen" */;
+			buildPhases = (
+				45AA3E72277944FB0045804B /* Sources */,
+				45AA3E73277944FB0045804B /* Frameworks */,
+				45AA3E74277944FB0045804B /* Resources */,
+				45AA3EBA2779458B0045804B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45AA3EB12779458B0045804B /* PBXTargetDependency */,
+			);
+			name = oxygen;
+			productName = oxygen;
+			productReference = 45AA3E76277944FB0045804B /* oxygen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45AA3E93277945890045804B /* SpO2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AA3EB72779458B0045804B /* Build configuration list for PBXNativeTarget "SpO2" */;
+			buildPhases = (
+				45AA3E92277945890045804B /* Resources */,
+				45AA3EB62779458B0045804B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45AA3EA22779458B0045804B /* PBXTargetDependency */,
+			);
+			name = SpO2;
+			productName = SpO2;
+			productReference = 45AA3E94277945890045804B /* SpO2.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		45AA3E9E2779458B0045804B /* SpO2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AA3EB32779458B0045804B /* Build configuration list for PBXNativeTarget "SpO2 WatchKit Extension" */;
+			buildPhases = (
+				45AA3E9B2779458B0045804B /* Sources */,
+				45AA3E9C2779458B0045804B /* Frameworks */,
+				45AA3E9D2779458B0045804B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpO2 WatchKit Extension";
+			productName = "SpO2 WatchKit Extension";
+			productReference = 45AA3E9F2779458B0045804B /* SpO2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45AA3E6E277944FB0045804B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					45AA3E75277944FB0045804B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					45AA3E93277945890045804B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					45AA3E9E2779458B0045804B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 45AA3E71277944FB0045804B /* Build configuration list for PBXProject "oxygen" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45AA3E6D277944FB0045804B;
+			productRefGroup = 45AA3E77277944FB0045804B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45AA3E75277944FB0045804B /* oxygen */,
+				45AA3E93277945890045804B /* SpO2 */,
+				45AA3E9E2779458B0045804B /* SpO2 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45AA3E74277944FB0045804B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA3E89277944FC0045804B /* LaunchScreen.storyboard in Resources */,
+				45AA3E86277944FC0045804B /* Assets.xcassets in Resources */,
+				45AA3E84277944FB0045804B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AA3E92277945890045804B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA3E9A2779458A0045804B /* Assets.xcassets in Resources */,
+				45AA3E98277945890045804B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AA3E9D2779458B0045804B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA3EAE2779458B0045804B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45AA3E72277944FB0045804B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA3E81277944FB0045804B /* ViewController.m in Sources */,
+				45AA3EBE277948920045804B /* AppleWatchConnectivityManager.m in Sources */,
+				45AA3E7B277944FB0045804B /* AppDelegate.m in Sources */,
+				45AA3E8C277944FC0045804B /* main.m in Sources */,
+				45AA3E7E277944FB0045804B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45AA3E9B2779458B0045804B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA3EAC2779458B0045804B /* ComplicationController.m in Sources */,
+				45AA3EBF277948920045804B /* AppleWatchConnectivityManager.m in Sources */,
+				45AA3EA92779458B0045804B /* ExtensionDelegate.m in Sources */,
+				45AA3EA62779458B0045804B /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45AA3EA22779458B0045804B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AA3E9E2779458B0045804B /* SpO2 WatchKit Extension */;
+			targetProxy = 45AA3EA12779458B0045804B /* PBXContainerItemProxy */;
+		};
+		45AA3EB12779458B0045804B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AA3E93277945890045804B /* SpO2 */;
+			targetProxy = 45AA3EB02779458B0045804B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45AA3E82277944FB0045804B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45AA3E83277944FB0045804B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45AA3E87277944FC0045804B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45AA3E88277944FC0045804B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		45AA3E96277945890045804B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45AA3E97277945890045804B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45AA3E8D277944FC0045804B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45AA3E8E277944FC0045804B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45AA3E90277944FC0045804B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oxygen/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45AA3E91277944FC0045804B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = oxygen/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45AA3EB42779458B0045804B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpO2 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SpO2 WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		45AA3EB52779458B0045804B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpO2 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SpO2 WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		45AA3EB82779458B0045804B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SpO2_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SpO2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hanmingjie.oxygen;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		45AA3EB92779458B0045804B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KM9DQ5C6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SpO2_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SpO2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.hanmingjie.oxygen;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.oxygen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45AA3E71277944FB0045804B /* Build configuration list for PBXProject "oxygen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AA3E8D277944FC0045804B /* Debug */,
+				45AA3E8E277944FC0045804B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AA3E8F277944FC0045804B /* Build configuration list for PBXNativeTarget "oxygen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AA3E90277944FC0045804B /* Debug */,
+				45AA3E91277944FC0045804B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AA3EB32779458B0045804B /* Build configuration list for PBXNativeTarget "SpO2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AA3EB42779458B0045804B /* Debug */,
+				45AA3EB52779458B0045804B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AA3EB72779458B0045804B /* Build configuration list for PBXNativeTarget "SpO2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45AA3EB82779458B0045804B /* Debug */,
+				45AA3EB92779458B0045804B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45AA3E6E277944FB0045804B /* Project object */;
+}
