@@ -10,6 +10,8 @@
 
 @interface InterfaceController : WKInterfaceController
 @property (nonatomic) IBOutlet WKInterfaceButton *startStopButton;
+@property (nonatomic) IBOutlet WKInterfaceLabel *spo2Label;
+@property (nonatomic) IBOutlet WKInterfaceLabel *testTimeLabel;
 
--(IBAction)start;
+-(IBAction)buttonAction;
 @end

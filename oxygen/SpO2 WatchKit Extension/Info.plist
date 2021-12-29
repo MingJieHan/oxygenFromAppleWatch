@@ -12,5 +12,18 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>workout-processing</string>
+	</array>
+    
+    <key>NSHealthShareUsageDescription</key>
+    <string>oxygen Hans app want read SpO2 from Apple Watch.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>oxygen Hans app want read SpO2 from Apple Watch.</string>
+    <key>HKQuantityTypeIdentifierOxygenSaturation</key>
+    <string>request</string>
 </dict>
 </plist>

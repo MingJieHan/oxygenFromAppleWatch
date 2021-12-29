@@ -11,14 +11,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="SpO2" id="dHV-jc-sCE">
+                        <label alignment="left" text="--%" textAlignment="center" baselineAdjustment="alignCenters" id="lEy-jR-HtN" propertyAccessControl="none">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <label width="136" alignment="left" text="--" textAlignment="right" id="tQ8-1w-cJ3"/>
+                        <button width="1" alignment="left" title="Waiting Start" id="dHV-jc-sCE">
                             <connections>
-                                <action selector="start" destination="AgC-eL-Hgc" id="GId-3v-d8h"/>
+                                <action selector="buttonAction" destination="AgC-eL-Hgc" id="GId-3v-d8h"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="spo2Label" destination="lEy-jR-HtN" id="4Xb-uc-jal"/>
                         <outlet property="startStopButton" destination="dHV-jc-sCE" id="MZx-Aa-D1v"/>
+                        <outlet property="testTimeLabel" destination="tQ8-1w-cJ3" id="TvY-cZ-GwP"/>
                     </connections>
                 </controller>
             </objects>
