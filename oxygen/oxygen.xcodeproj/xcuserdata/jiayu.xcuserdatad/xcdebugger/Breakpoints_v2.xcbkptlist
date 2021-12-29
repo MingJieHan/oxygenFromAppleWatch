@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1063B859-E9CA-43BF-AA99-CC84923A69D9"
+            uuid = "94685080-A8B8-4231-97C0-EF24072EC81D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpO2 WatchKit Extension/InterfaceController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-startTest"
             landmarkType = "7">
          </BreakpointContent>

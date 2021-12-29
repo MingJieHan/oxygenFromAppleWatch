@@ -12,6 +12,7 @@
     HKSampleType *type;
     HKHealthStore *currentStore;
     HKAnchoredObjectQuery *currentQuery;
+    HKAnchoredObjectQuery *currentO2Query;
 }
 
 @end
@@ -30,7 +31,7 @@
 
     NSSet *devicesSet = [NSSet setWithArray:@[[HKDevice localDevice]]];
     NSPredicate *devicePredicate = [HKQuery predicateForObjectsFromDevices:devicesSet];
-    NSPredicate *p = [NSCompoundPredicate andPredicateWithSubpredicates:@[devicePredicate]];
+    NSPredicate *p = [NSCompoundPredicate andPredicateWithSubpredicates:@[devicePredicate,datePredicate]];
     
     currentQuery = [[HKAnchoredObjectQuery alloc] initWithType:type predicate:p anchor:nil limit:HKObjectQueryNoLimit resultsHandler:^(HKAnchoredObjectQuery * _Nonnull query, NSArray<__kindof HKSample *> * _Nullable sampleObjects, NSArray<HKDeletedObject *> * _Nullable deletedObjects, HKQueryAnchor * _Nullable newAnchor, NSError * _Nullable error) {
         NSLog(@"Count:%lu", (unsigned long)sampleObjects.count);
@@ -40,11 +41,33 @@
             return;
         }
     }];
+    currentQuery.updateHandler = ^(HKAnchoredObjectQuery * _Nonnull query, NSArray<__kindof HKSample *> * _Nullable addedObjects, NSArray<HKDeletedObject *> * _Nullable deletedObjects, HKQueryAnchor * _Nullable newAnchor, NSError * _Nullable error) {
+        //gotted update HeartRate 30 Dec 2021
+        NSLog(@"HeartRate Append result:%@", addedObjects);
+        return;
+    };
+    
+    HKQuantityType *o2type=[HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierOxygenSaturation];
+    currentO2Query = [[HKAnchoredObjectQuery alloc] initWithType:o2type predicate:p anchor:nil limit:HKObjectQueryNoLimit resultsHandler:^(HKAnchoredObjectQuery * _Nonnull query, NSArray<__kindof HKSample *> * _Nullable sampleObjects, NSArray<HKDeletedObject *> * _Nullable deletedObjects, HKQueryAnchor * _Nullable newAnchor, NSError * _Nullable error) {
+        NSLog(@"Count:%lu", (unsigned long)sampleObjects.count);
+        NSLog(@"%@", sampleObjects.lastObject);
+        if (error){
+            NSLog(@"Query Error:%@", error);
+            return;
+        }
+    }];
+    currentO2Query.updateHandler = ^(HKAnchoredObjectQuery * _Nonnull query, NSArray<__kindof HKSample *> * _Nullable addedObjects, NSArray<HKDeletedObject *> * _Nullable deletedObjects, HKQueryAnchor * _Nullable newAnchor, NSError * _Nullable error) {
+        NSLog(@"Oxygen Append result:%@", addedObjects);
+        //Can NOT got Oxygen. Why?
+        return;
+    };
+    
     if (nil == currentStore){
         currentStore = [[HKHealthStore alloc] init];
     }
     NSLog(@"Query started.");
     [currentStore executeQuery:currentQuery];
+    [currentStore executeQuery:currentO2Query];
     return;
 }
 
@@ -180,8 +203,13 @@
 
 - (void)awakeWithContext:(id)context {
     NSLog(@"awake");
-//    HKQuantityTypeIdentifierElectrodermalActivity
     
+//    HKQuantityTypeIdentifierVO2Max 有氧势能
+//    HKQuantityTypeIdentifierBodyTemperature 体温
+    
+//    type=[HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierVO2Max];
+//    NSLog(@"Current Type is Testing.");
+
     
 //    type=[HKQuantityType quantityTypeForIdentifier:HKQuantityTypeIdentifierOxygenSaturation];
 //    NSLog(@"Current Type is Oxygen");

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455E80FD277D10FC00181008 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 455E80FC277D10FC00181008 /* README.md */; };
 		45AA3E7B277944FB0045804B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E7A277944FB0045804B /* AppDelegate.m */; };
 		45AA3E7E277944FB0045804B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E7D277944FB0045804B /* SceneDelegate.m */; };
 		45AA3E81277944FB0045804B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3E80277944FB0045804B /* ViewController.m */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		455E80FC277D10FC00181008 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		45AA3E76277944FB0045804B /* oxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3E79277944FB0045804B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45AA3E7A277944FB0045804B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,7 +102,6 @@
 		45AA3EC1277951510045804B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		45AA3EC227795F260045804B /* oxygen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = oxygen.entitlements; sourceTree = "<group>"; };
 		45AA3EC327795F270045804B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		45AA3EC52779615C0045804B /* SpO2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SpO2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		45AA3E6D277944FB0045804B = {
 			isa = PBXGroup;
 			children = (
+				455E80FC277D10FC00181008 /* README.md */,
 				45AA3EBB2779487B0045804B /* Shared */,
 				45AA3E78277944FB0045804B /* oxygen */,
 				45AA3E95277945890045804B /* SpO2 */,
@@ -176,7 +178,6 @@
 		45AA3EA32779458B0045804B /* SpO2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				45AA3EC52779615C0045804B /* SpO2 WatchKit Extension.entitlements */,
 				45AA3EA42779458B0045804B /* InterfaceController.h */,
 				45AA3EA52779458B0045804B /* InterfaceController.m */,
 				45AA3EA72779458B0045804B /* ExtensionDelegate.h */,
@@ -310,6 +311,7 @@
 			files = (
 				45AA3E89277944FC0045804B /* LaunchScreen.storyboard in Resources */,
 				45AA3E86277944FC0045804B /* Assets.xcassets in Resources */,
+				455E80FD277D10FC00181008 /* README.md in Resources */,
 				45AA3E84277944FB0045804B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
